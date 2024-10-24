@@ -1,0 +1,88 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f6f0;
+    margin: 0;
+    padding: 0;
+
+}
+.container {
+            max-width: 1200px; 
+            margin: 0 auto;    
+            padding: 20px;
+            background-color: #889C9B;
+                
+        }
+.toinencontainer {
+            max-width: 1000px; 
+            margin: 0 auto;    
+            padding: 20px;
+            background-image: url('juu.jpg');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;      
+        }
+header {
+    background-color: #486966;
+    padding: 10px 0;
+    box-shadow: 0 4px 2px -2px gray;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #486966;
+}
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #889C9B;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+.banner {
+    text-align: center;
+    padding: 50px 0;
+    
+}
+.banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+.image-placeholder {
+    width: 500px;
+    height: 300px;
+    background-color: #B2BEBF;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+}
+.description {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #333;
+    font-size: 16px;
+}
