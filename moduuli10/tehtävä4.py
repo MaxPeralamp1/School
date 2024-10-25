@@ -56,9 +56,10 @@ kilpailu = Kilpailu("Suuri romuralli", 8000, kilpailijat)
 
 while not kilpailu.kilpailu_ohi():
     for i in range(1, 11):
-        continue
+        if not kilpailu.kilpailu_ohi():
+            kilpailu.tunti_kuluu()
     kilpailu.tulosta_tilanne()
-    kilpailu.tunti_kuluu()
+
 
 print("")
 print("")
