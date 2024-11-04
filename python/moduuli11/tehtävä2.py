@@ -16,8 +16,6 @@ class Auto:
 
     def kulje(self, tuntimäärä):
         self.kuljettumatka += self.nopeus * tuntimäärä
-        print(self.rekisteritunnus, self.huippunopeus, self.kuljettumatka, self.nopeus)
-
 
 class Sähköauto(Auto):
     def __init__(self, rekisteritunnus, huippunopeus, akkukapasiteetti):
@@ -37,6 +35,5 @@ polttis = BensaAuto("ACD-123", 165, 32.3)
 sähköauto.kiihdytä(100000)
 polttis.kiihdytä(10000)
 
-sähköauto.kulje(3)
-polttis.kulje(3)
-
+print(sähköauto.kulje(3))
+print(polttis.kulje(3))
