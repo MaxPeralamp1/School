@@ -139,6 +139,7 @@ header {
 .product-card p {
     font-size: 14px;
     color: #000000;
+    padding: 2px;
 }
 
 .product-card p i {
