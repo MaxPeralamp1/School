@@ -19,7 +19,7 @@ body {
             margin: 0 auto;    
             padding: 20px;
             height: 900px;
-            background-image: url('juu.jpg');
+            background-image: url('images/juu.jpg');
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat;      
@@ -82,6 +82,7 @@ header {
     font-size: 24px;
 }
 
+
 .float-container {
     border: 3px solid #fff;
     padding: 20px;
@@ -132,6 +133,7 @@ header {
     justify-content: center;
     font-size: 24px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 .product-card p {
