@@ -2,17 +2,19 @@ from flask import Flask, request, Response
 import json
 
 app = Flask(__name__)
-@app.route('/alkuluku/<alkuluku>')
-def alkuluku():
+@app.route('/alkuluku/<number>')
+def alkuluku(number):
     try:
-        args = request.args
-        alkuluku = args['alkuluku']
+        alkuluku = int(number)
         if alkuluku <= 1:
             print(f"{alkuluku} is not a prime number.")
+            is_prime = False
         elif alkuluku <= 3:
             print(f"{alkuluku} is a prime number.")
+            is_prime = True
         elif alkuluku % 2 == 0 or alkuluku % 3 == 0:
             print(f"{alkuluku} is not a prime number.")
+            is_prime = False
         else:
             i = 5
             is_prime = True
@@ -26,6 +28,7 @@ def alkuluku():
             "number" : alkuluku,
             "isprime" : is_prime,
         }
+        tilakoodi = 200
     except ValueError:
         tilakoodi = 400
         vastaus = {
@@ -38,4 +41,4 @@ def alkuluku():
 
 
 if __name__ == '__main__':
-    app.run(use_reloader=True, host='0.0.0.0', port=8080)
+    app.run(use_reloader=True, host='127.0.0.1', port=3000)
