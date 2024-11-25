@@ -5,6 +5,7 @@ app = Flask(__name__)
 @app.route('/summa/<luku1>/<luku2>')
 def summa(luku1, luku2):
     try:
+        status_code = 200
         luku1 = float(luku1)
         luku2 = float(luku2)
         summa = luku1+luku2
